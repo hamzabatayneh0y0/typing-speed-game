@@ -1,0 +1,131 @@
+*{
+    -webkit-box-sizing:border-box ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.game{
+    text-align: center;
+    background-color: #eee;
+    text-transform: capitalize;
+    min-height: 100vh;
+    
+}
+.tittle{
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: #00a6fc;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+p{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.level,.seconds{
+    position: relative;
+}
+.level::before,.level:after,.seconds::before,.seconds::after{
+    color: rgb(107, 233, 4);
+}
+.level::before ,.seconds::before{
+    content: "[";
+    margin-right:2px ;
+}
+.level:after,.seconds::after{
+    content: "]";
+    margin-left: 2px;
+}
+.word{
+    background-color: white;
+    color: #00a6fc;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.input{
+    width: 100%;
+    border: solid 2px #00a6fc;
+    border-radius: 5px;
+    caret-color: #00a6fc;
+    padding: 5px;
+    outline: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00a6fc;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.word,.input{
+    display: none;
+}
+.start{
+    color: white;
+    background-color: #14aa4e;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.start:hover{
+    background-color: #0f9141;
+}
+.cl{
+    display: none;
+    gap: 30px;
+    justify-content: center;
+    background-color: white;
+    color: #00a6fc;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 10px;
+    
+} 
+.cl label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.cl input{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.container{
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.next{
+    background-color: #00a6fc;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.info{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
